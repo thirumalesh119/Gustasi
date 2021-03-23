@@ -1,0 +1,3 @@
+browser=chrome
+url=https://sitweb.gustasi.com/
+chromepath=F:\\Selenium\\E2Eproject\\driver\\chromedriver.exe
