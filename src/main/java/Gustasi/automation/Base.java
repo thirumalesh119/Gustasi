@@ -17,7 +17,7 @@ public class Base {
 	public WebDriver launchBrowser() throws IOException {
 		Properties prop = new Properties();
 		FileInputStream fp = new FileInputStream(
-				"F:\\Selenium\\automation\\src\\main\\java\\Gustasi\\automation\\dataproperties");
+				"/home/THIRUMALESH.PATURI/Music/Gustasi/src/main/java/Gustasi/automation/dataproperties");
 		prop.load(fp);
 		String browserName = prop.getProperty("browser");
 		String siteurl = prop.getProperty("url");
@@ -25,9 +25,10 @@ public class Base {
 		if (browserName.equals("chrome")) {
 
 			String path = prop.getProperty("chromeBrowserPath");
-			System.setProperty("webdriver.chrome.driver", "F:\\\\Selenium\\\\E2Eproject\\\\driver\\\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "/home/THIRUMALESH.PATURI/Music/chromedriver_linux64 (1)/chromedriver");
 			driver = new ChromeDriver();
 			driver.get(siteurl);
+			driver.manage().window().maximize();
 		}
 		if(browserName.equals("Firefox")) {
 			driver = new FirefoxDriver();
