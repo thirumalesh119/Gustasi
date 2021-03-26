@@ -5,7 +5,7 @@
     <classes>
       <class name="testCases.Gustasi">
         <methods>
-          <include name="loginTestCases" invocation-numbers="0 1"/>
+          <include name="addProductsToBag"/>
         </methods>
       </class> <!-- testCases.Gustasi -->
     </classes>
