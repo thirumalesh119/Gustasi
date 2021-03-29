@@ -23,4 +23,10 @@ WebElement searchIcon;
 public WebElement searchIcon() {
 	return searchIcon;
 }
+@FindBy(xpath="//div[@class=\"top-features-area seach-area\"]/div[1]")
+WebElement areaSearch;
+
+public WebElement areaSearch() {
+	return areaSearch;
+}
 }
